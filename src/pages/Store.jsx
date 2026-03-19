@@ -36,19 +36,6 @@ const PRODUCT_ICONS = {
   Storage: '💾', 'VR/AR': '🥽', Accessories: '🔌',
 }
 
-// Infer a category from a product name when the backend doesn't supply one
-function guessCategoryFromName(name = '') {
-  const n = name.toLowerCase()
-  if (n.includes('laptop') || n.includes('notebook') || n.includes('macbook')) return 'Laptops'
-  if (n.includes('headphone') || n.includes('earbud') || n.includes('bud') || n.includes('audio') || n.includes('speaker')) return 'Audio'
-  if (n.includes('keyboard') || n.includes('mouse') || n.includes('pad') || n.includes('peripheral')) return 'Peripherals'
-  if (n.includes('monitor') || n.includes('display') || n.includes('screen')) return 'Displays'
-  if (n.includes('ssd') || n.includes('hdd') || n.includes('drive') || n.includes('storage')) return 'Storage'
-  if (n.includes('vr') || n.includes('headset') || n.includes('ar') || n.includes('quest')) return 'VR/AR'
-  if (n.includes('charger') || n.includes('cable') || n.includes('hub') || n.includes('adapter')) return 'Accessories'
-  return 'Electronics'
-}
-
 export default function Store() {
   const { addToCart, user, cart } = useApp()
   const navigate = useNavigate()
