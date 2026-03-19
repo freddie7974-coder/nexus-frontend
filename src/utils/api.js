@@ -1,4 +1,4 @@
-const BASE = 'https://web-production-f7a103.up.railway.app'
+const BASE = 'https://web-production-5b784.up.railway.app'
 
 async function post(endpoint, data) {
   const body = new URLSearchParams(data).toString()
