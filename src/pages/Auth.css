@@ -1,7 +1,8 @@
 .auth-page {
   min-height: 100vh;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
 }
@@ -33,6 +34,16 @@
 }
 
 /* ─── HERO PANEL ─── */
+ .auth-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   height: 100vh;
+ }
+
 .auth-hero {
   width: 45%;
   background: linear-gradient(135deg, #060d14 0%, #0a1520 60%, #060d14 100%);
