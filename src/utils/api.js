@@ -1,4 +1,4 @@
-const BASE = 'https://web-production-5b784.up.railway.app'
+const BASE = 'https://nexus-backend-axc0.onrender.com'
 
 async function post(endpoint, data) {
   const body = new URLSearchParams(data).toString()
